@@ -1,31 +1,23 @@
-import { useState } from 'react';
 import './Tailwind.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/AboutMe';
+import Skills from './components/Skills/SkillsSection';
+import Projects from './components/Project/ProjectSection';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/project/:id" element={<ProjectDetails />} />
-      </Routes>
-    </BrowserRouter> */}
-    </>
+    <div className="min-h-screen bg-[#1a1a24] text-white">
+    <Navbar />
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Contact />
+    <Footer />
+  </div>
   );
 }
 
