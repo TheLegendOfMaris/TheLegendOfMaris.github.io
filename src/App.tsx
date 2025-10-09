@@ -10,16 +10,16 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-[#08071B] text-white">
-    <div className="relative">
+      <div className="relative">
         <Navbar />
         <Hero />
+      </div>
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-    <Footer />
-  </div>
   );
 }
 
