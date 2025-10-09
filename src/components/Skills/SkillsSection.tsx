@@ -25,24 +25,29 @@ const Skills = () => {
           />
           <TechnologyCard
             title="Web- & Softwareentwicklung"
-            technologies="React, Tailwind CSS, Bootstrap, MySQL, Swagger, Jest, OpenAI API, Node.js"
+            technologies="React, Tailwind CSS, Bootstrap, Node.js, MySQL, OpenAI API, Swagger, Jest"
             icons={[
               { src: '/src/assets/Icons/ReactIcon.png', name: 'React' },
               { src: '/src/assets/Icons/TailwindIcon.png', name: 'Tailwind' },
-              { src: '/src/assets/Icons/MySQLIcon.png', name: 'MySQL' },
-              { src: '/src/assets/Icons/JestIcon.png', name: 'Jest' },
-              { src: '/src/assets/Icons/NodejsIcon.png', name: 'Node.js' },
-              { src: '/src/assets/Icons/SwaggerIcon.png', name: 'Swagger' },
               { src: '/src/assets/Icons/BootstrapIcon.png', name: 'Bootstrap' },
+              { src: '/src/assets/Icons/NodejsIcon.png', name: 'Node.js' },
+              { src: '/src/assets/Icons/MySQLIcon.png', name: 'MySQL' },
               { src: '/src/assets/Icons/OpenAIIcon.png', name: 'OpenAI API' },
+              { src: '/src/assets/Icons/JestIcon.png', name: 'Jest' },
+              { src: '/src/assets/Icons/SwaggerIcon.png', name: 'Swagger' },
             ]}
           />
           <TechnologyCard
             title="Tools & Sonstiges"
-            technologies="GitHub, Azure DevOps, Docker, Unity, Blender, Figma"
+            technologies="GitHub, Azure DevOps, Docker, Figma, Unity, Blender"
             icons={[
               { src: '/src/assets/Icons/GitHubIcon.png', name: 'GitHub' },
+              {
+                src: '/src/assets/Icons/AzureDevOpsIcon.png',
+                name: 'Azure DevOps',
+              },
               { src: '/src/assets/Icons/DockerIcon.png', name: 'Docker' },
+              { src: '/src/assets/Icons/FigmaIcon.png', name: 'Figma' },
               { src: '/src/assets/Icons/UnityIcon.png', name: 'Unity' },
               { src: '/src/assets/Icons/BlenderIcon.png', name: 'Blender' },
             ]}
