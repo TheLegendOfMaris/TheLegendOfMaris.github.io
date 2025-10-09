@@ -9,18 +9,43 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-30">
           <TechnologyCard
             title="Programmiersprachen"
-            technologies="C/C++, Java, JavaScript"
-            icons={['cplusplus', 'javascript']}
+            technologies="C/C++, Java, JavaScript, TypeScript"
+            icons={[
+              { src: '/src/assets/Icons/C++Icon.png', name: 'C++' },
+              { src: '/src/assets/Icons/JavaIcon.png', name: 'Java' },
+              {
+                src: '/src/assets/Icons/JavaScriptIcon.png',
+                name: 'JavaScript',
+              },
+              {
+                src: '/src/assets/Icons/TypeScriptIcon.png',
+                name: 'TypeScript',
+              },
+            ]}
           />
           <TechnologyCard
             title="Web- & Softwareentwicklung"
-            technologies="React, Tailwind CSS, Bootstrap, Prisma, MySQL, Swagger, Jest, OpenAI API"
-            icons={['/path/to/icon1.png', '/path/to/icon2.png']}
+            technologies="React, Tailwind CSS, Bootstrap, MySQL, Swagger, Jest, OpenAI API, Node.js"
+            icons={[
+              { src: '/src/assets/Icons/ReactIcon.png', name: 'React' },
+              { src: '/src/assets/Icons/TailwindIcon.png', name: 'Tailwind' },
+              { src: '/src/assets/Icons/MySQLIcon.png', name: 'MySQL' },
+              { src: '/src/assets/Icons/JestIcon.png', name: 'Jest' },
+              { src: '/src/assets/Icons/NodejsIcon.png', name: 'Node.js' },
+              { src: '/src/assets/Icons/SwaggerIcon.png', name: 'Swagger' },
+              { src: '/src/assets/Icons/BootstrapIcon.png', name: 'Bootstrap' },
+              { src: '/src/assets/Icons/OpenAIIcon.png', name: 'OpenAI API' },
+            ]}
           />
           <TechnologyCard
             title="Tools & Sonstiges"
-            technologies="GitHub, Docker, Unity, Blender, Figma"
-            icons={['/path/to/icon1.png', '/path/to/icon2.png']}
+            technologies="GitHub, Azure DevOps, Docker, Unity, Blender, Figma"
+            icons={[
+              { src: '/src/assets/Icons/GitHubIcon.png', name: 'GitHub' },
+              { src: '/src/assets/Icons/DockerIcon.png', name: 'Docker' },
+              { src: '/src/assets/Icons/UnityIcon.png', name: 'Unity' },
+              { src: '/src/assets/Icons/BlenderIcon.png', name: 'Blender' },
+            ]}
           />
         </div>
 
