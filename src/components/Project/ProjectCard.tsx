@@ -1,0 +1,114 @@
+import { Project } from './ProjectInfo';
+import LaptopFrame from '/laptopblank.png';
+
+export const CardLeft = ({ project }: { project: Project }) => {
+  return (
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="space-y-4">
+        <h3 className="text-2xl font-semibold">{project.title}</h3>
+        <p className="text-gray-300">{project.description}</p>
+        <div className="flex gap-3 pt-2">
+          {project.hasSummary && (
+            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+              Zusammenfassung
+            </button>
+          )}
+          {project.hasWebsite && (
+            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+              Website
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="relative">
+        {project.hasWebsite ? (
+          // Laptop-Frame für Website-Projekte
+          <div className="relative">
+            <img
+              src={LaptopFrame}
+              alt="Laptop Frame"
+              className="w-full h-auto"
+            />
+            <div 
+              className="absolute overflow-hidden rounded-sm"
+              style={{
+                top: project.screenPosition?.top || '8%',
+                left: project.screenPosition?.left || '12%',
+                width: project.screenPosition?.width || '76%',
+                height: project.screenPosition?.height || '55%'
+              }}
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-fill"
+              />
+            </div>
+          </div>
+        ) : (
+          // Normales Bild für andere Projekte
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-auto rounded-md shadow-lg"
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export const CardRight = ({ project }: { project: Project }) => {
+  return (
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="order-2 md:order-1">
+        {project.hasWebsite ? (
+          // Laptop-Frame für Website-Projekte
+          <div className="relative">
+            <img
+              src={LaptopFrame}
+              alt="Laptop Frame"
+              className="w-full h-auto"
+            />
+            <div 
+              className="absolute overflow-hidden rounded-sm"
+              style={{
+                top: project.screenPosition?.top || '8%',
+                left: project.screenPosition?.left || '12%',
+                width: project.screenPosition?.width || '76%',
+                height: project.screenPosition?.height || '55%'
+              }}
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-fill"
+              />
+            </div>
+          </div>
+        ) : (
+          // Normales Bild für andere Projekte
+          <img
+            src={project.image || '/placeholder.svg'}
+            alt={project.title}
+            className="w-full h-auto rounded-md shadow-lg"
+          />
+        )}
+      </div>
+      <div className="space-y-4 order-1 md:order-2">
+        <h3 className="text-2xl font-semibold">{project.title}</h3>
+        <p className="text-gray-300">{project.description}</p>
+        {project.hasSummary && (
+          <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+            Zusammenfassung
+          </button>
+        )}
+        {project.hasWebsite && (
+          <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+            Zur Website
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
