@@ -1,5 +1,6 @@
 import { Project } from './ProjectInfo';
 import LaptopFrame from '/laptopblank.png';
+import ImgGallery from './ImgGallery';
 
 // Funktion um die richtige Bildgröße zu bestimmen
 const getImageSizeClass = (imageSize?: string) => {
@@ -28,7 +29,10 @@ export const CardLeft = ({ project }: { project: Project }) => {
             </button>
           )}
           {project.hasWebsite && (
-            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+            <button
+              className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
+              onClick={() => window.open(project.website)}
+            >
               Website
             </button>
           )}
@@ -36,7 +40,6 @@ export const CardLeft = ({ project }: { project: Project }) => {
       </div>
       <div className="relative">
         {project.hasWebsite ? (
-          // Laptop-Frame für Website-Projekte
           <div className="relative">
             <img
               src={LaptopFrame}
@@ -59,8 +62,13 @@ export const CardLeft = ({ project }: { project: Project }) => {
               />
             </div>
           </div>
+        ) : project.isGallery && project.images ? (
+          <ImgGallery
+            images={project.images}
+            title={project.title}
+            className="w-full"
+          />
         ) : (
-          // Normales Bild für andere Projekte
           <img
             src={project.image}
             alt={project.title}
@@ -77,7 +85,6 @@ export const CardRight = ({ project }: { project: Project }) => {
     <div className="grid md:grid-cols-2 gap-8 items-center">
       <div className="order-2 md:order-1">
         {project.hasWebsite ? (
-          // Laptop-Frame für Website-Projekte
           <div className="relative">
             <img
               src={LaptopFrame}
@@ -100,8 +107,13 @@ export const CardRight = ({ project }: { project: Project }) => {
               />
             </div>
           </div>
+        ) : project.isGallery && project.images ? (
+          <ImgGallery
+            images={project.images}
+            title={project.title}
+            className="w-full"
+          />
         ) : (
-          // Normales Bild für andere Projekte
           <img
             src={project.image || '/placeholder.svg'}
             alt={project.title}
@@ -112,16 +124,21 @@ export const CardRight = ({ project }: { project: Project }) => {
       <div className="space-y-4 order-1 md:order-2">
         <h3 className="text-2xl font-semibold">{project.title}</h3>
         <p className="text-gray-300">{project.description}</p>
-        {project.hasSummary && (
-          <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
-            Zusammenfassung
-          </button>
-        )}
-        {project.hasWebsite && (
-          <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
-            Zur Website
-          </button>
-        )}
+        <div className="flex gap-3 pt-2">
+          {project.hasSummary && (
+            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+              Zusammenfassung
+            </button>
+          )}
+          {project.hasWebsite && (
+            <button
+              className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
+              onClick={() => window.open(project.website)}
+            >
+              Website
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

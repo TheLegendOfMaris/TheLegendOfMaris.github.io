@@ -3,6 +3,7 @@ export interface Project {
   description: string;
   image: string;
   hasWebsite: boolean;
+  website?: string;
   hasSummary: boolean;
   isGallery?: boolean;
   images?: string[];
@@ -23,12 +24,13 @@ export const projects: Project[] = [
       'Das Softwareprojekt war ein 2-semestrigen Pflichtmodul im Studium. In Gruppen haben wir eine Webanwendung zu entwickeln.',
     image: '/Softwareprojekt.png',
     hasWebsite: true,
+    website: 'https://dcnm-stellen.imn.htwk-leipzig.de/',
     hasSummary: true,
     screenPosition: {
-      top: '8%',
-      left: '12%',
-      width: '76%',
-      height: '55%',
+      top: '5.5%',
+      left: '10.5%',
+      width: '79%',
+      height: '83%',
     },
   },
   {
@@ -37,6 +39,7 @@ export const projects: Project[] = [
       'Eine kleine Website, die meine persönlichen Lieblingsbücher in einer Übersicht darstellt.',
     image: '/Bookshelf.png',
     hasWebsite: true,
+    website: 'https://www.imn.htwk-leipzig.de/~mschwabe/',
     hasSummary: false,
     screenPosition: {
       top: '5.4%',
@@ -60,10 +63,10 @@ export const projects: Project[] = [
     image: '/RenderDämmerung.png',
     images: [
       '/RenderDämmerung.png',
+      '/RenderTagsüber.png',
       '/RenderDetail.png',
       '/RenderDetailWand.png',
       '/RenderMorgens.png',
-      '/RenderTagsüber.png',
     ],
     hasWebsite: false,
     hasSummary: false,
@@ -84,6 +87,7 @@ export const projects: Project[] = [
       '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
     image: '/Wissensquell.png',
     hasWebsite: true,
+    website: 'http://wissensquell.imn.htwk-leipzig.de/',
     hasSummary: true,
     screenPosition: {
       top: '5.5%',
