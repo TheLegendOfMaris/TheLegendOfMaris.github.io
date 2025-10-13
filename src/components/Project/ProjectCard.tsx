@@ -1,6 +1,20 @@
 import { Project } from './ProjectInfo';
 import LaptopFrame from '/laptopblank.png';
 
+// Funktion um die richtige Bildgröße zu bestimmen
+const getImageSizeClass = (imageSize?: string) => {
+  switch (imageSize) {
+    case 'small':
+      return 'w-48 h-auto mx-auto';
+    case 'medium':
+      return 'w-80 h-auto mx-auto';
+    case 'large':
+      return 'w-full h-auto';
+    default:
+      return 'w-full h-auto';
+  }
+};
+
 export const CardLeft = ({ project }: { project: Project }) => {
   return (
     <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -29,13 +43,13 @@ export const CardLeft = ({ project }: { project: Project }) => {
               alt="Laptop Frame"
               className="w-full h-auto"
             />
-            <div 
+            <div
               className="absolute overflow-hidden rounded-sm"
               style={{
                 top: project.screenPosition?.top || '8%',
                 left: project.screenPosition?.left || '12%',
                 width: project.screenPosition?.width || '76%',
-                height: project.screenPosition?.height || '55%'
+                height: project.screenPosition?.height || '55%',
               }}
             >
               <img
@@ -50,7 +64,7 @@ export const CardLeft = ({ project }: { project: Project }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-auto rounded-md shadow-lg"
+            className={`${getImageSizeClass(project.imageSize)} rounded-md shadow-lg`}
           />
         )}
       </div>
@@ -70,13 +84,13 @@ export const CardRight = ({ project }: { project: Project }) => {
               alt="Laptop Frame"
               className="w-full h-auto"
             />
-            <div 
+            <div
               className="absolute overflow-hidden rounded-sm"
               style={{
                 top: project.screenPosition?.top || '8%',
                 left: project.screenPosition?.left || '12%',
                 width: project.screenPosition?.width || '76%',
-                height: project.screenPosition?.height || '55%'
+                height: project.screenPosition?.height || '55%',
               }}
             >
               <img
@@ -91,7 +105,7 @@ export const CardRight = ({ project }: { project: Project }) => {
           <img
             src={project.image || '/placeholder.svg'}
             alt={project.title}
-            className="w-full h-auto rounded-md shadow-lg"
+            className={`${getImageSizeClass(project.imageSize)} rounded-md shadow-lg`}
           />
         )}
       </div>

@@ -1,18 +1,19 @@
 export interface Project {
   title: string;
   description: string;
-  //ggf hier noch der laptop wrapper?
   image: string;
-  images?: string[]; // Array für Galerie-Bilder
   hasWebsite: boolean;
   hasSummary: boolean;
+  isGallery?: boolean;
+  images?: string[];
+  //Positioning and Sizing
   screenPosition?: {
     top: string;
     left: string;
     width: string;
     height: string;
   };
-  isGallery?: boolean;
+  imageSize?: 'small' | 'medium' | 'large' | 'auto';
 }
 
 export const projects: Project[] = [
@@ -56,12 +57,13 @@ export const projects: Project[] = [
     title: 'Tempel in Blender',
     description:
       'Im Rahmen des Moduls Computeranimation musste ich Gebäude komplett selbst 3D-modellieren und mit Texturen und Materialien versehen werden.',
-    image: '/temple-blender.png',
+    image: '/RenderDämmerung.png',
     images: [
-      '/temple-blender.png',
-      '/temple-blender-2.png',
-      '/temple-blender-3.png',
-      '/temple-blender-4.png',
+      '/RenderDämmerung.png',
+      '/RenderDetail.png',
+      '/RenderDetailWand.png',
+      '/RenderMorgens.png',
+      '/RenderTagsüber.png',
     ],
     hasWebsite: false,
     hasSummary: false,
@@ -71,16 +73,23 @@ export const projects: Project[] = [
     title: 'Praktikum',
     description:
       '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
-    image: '/wbs-logo.png',
+    image: '/WBS.png',
     hasWebsite: false,
-    hasSummary: false,
+    hasSummary: true,
+    imageSize: 'small',
   },
   {
     title: 'Bachelorarbeit',
     description:
       '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
-    image: '/wbs-logo.png',
+    image: '/Wissensquell.png',
     hasWebsite: true,
     hasSummary: true,
+    screenPosition: {
+      top: '5.5%',
+      left: '10.3%',
+      width: '79.5%',
+      height: '83.5%',
+    },
   },
 ];
