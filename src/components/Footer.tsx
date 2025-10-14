@@ -10,6 +10,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div>© {new Date().getFullYear()} Marie Schwabe</div>
 
+        <div className="text-xs text-gray-400 text-center">
+          Zuletzt aktualisiert: 14.10.2025
+        </div>
+
         <div className="mt-4 md:mt-0">
           <ul className="flex space-x-6">
             <li>
@@ -30,7 +34,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com"
+                href="https://github.com/TheLegendOfMaris"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
@@ -40,7 +44,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/marie-schwabe-006075368/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"

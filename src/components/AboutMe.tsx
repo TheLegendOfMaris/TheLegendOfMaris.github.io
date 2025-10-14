@@ -8,23 +8,25 @@ const About = () => {
 
             <div className="space-y-4 text-gray-200">
               <p>
-                Ich bin Marie, 21 und leidenschaftliche Softwareentwicklerin.
+                Ich bin Marie, 21 Jahre alt, und leidenschaftliche
+                Softwareentwicklerin.
               </p>
 
               <p>
-                Aktuell studiere ich Medieninformatik im Master an der HTWK
+                Derzeit studiere ich Medieninformatik im Master an der HTWK
                 Leipzig und arbeite nebenbei an eigenen Softwareprojekten. In
                 den letzten Jahren habe ich an vielseitigen Projekten gearbeitet
-                – von Webanwendungen mit React und TypeScript bis hin zu
-                serverseitiger Logik mit Node.js und Datenbankdesign mit MySQL.
-                Was mich dabei besonders fasziniert: die Verbindung aus
-                technischem Denken, Kreativität und dem ständigen Lernen.
+                – von modernen Webanwendungen mit React und TypeScript über
+                serverseitige Logik mit Node.js bis hin zu Datenbankdesign mit
+                MySQL. Besonders fasziniert mich dabei die Verbindung aus
+                technischem Denken, Kreativität und dem ständigen Lernen neuer
+                Technologien.
               </p>
 
               <p>
-                Abseits des Bildschirms beschäftige ich mich gerne kreativ, egal
-                ob beim Malen oder Häkeln, ich lese auch gerne oder ich gehe
-                meiner Leidenschaft fürs Reisen nach.
+                Abseits des Bildschirms lebe ich meine kreative Seite beim Malen
+                oder Häkeln aus, lese gerne und lasse mich auf Reisen von neuen
+                Orten inspirieren..
               </p>
             </div>
           </div>
