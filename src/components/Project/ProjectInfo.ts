@@ -6,6 +6,8 @@ export interface Project {
   hasWebsite: boolean;
   website?: string;
   hasSummary: boolean;
+  summaryContent?: string;
+  summaryPdf?: string;
   isGallery?: boolean;
   images?: string[];
   //Positioning and Sizing
@@ -23,7 +25,7 @@ export const projects: Project[] = [
     title: 'Digitales Bücherregal',
     year: '2023',
     description:
-      'Eine kleine Website, die meine persönlichen Lieblingsbücher in einer Übersicht darstellt.',
+      'Im Rahmen eines Hochschulmoduls entwickelte ich eine kleine Website, die meine persönlichen Lieblingsbücher in einer übersichtlichen Galerie darstellt. Das Projekt diente als Übung zur Webentwicklung und bot mir die Gelegenheit, erste praktische Erfahrungen mit Bootstrap zu sammeln und den Umgang mit responsivem Design zu vertiefen.',
     image: '/Bookshelf.png',
     hasWebsite: true,
     website: 'https://www.imn.htwk-leipzig.de/~mschwabe/',
@@ -43,6 +45,7 @@ export const projects: Project[] = [
     image: '/Softwareprojekt.png',
     hasWebsite: true,
     website: 'https://dcnm-stellen.imn.htwk-leipzig.de/',
+    summaryPdf: '/L2-Poster.png',
     hasSummary: true,
     screenPosition: {
       top: '5.5%',
