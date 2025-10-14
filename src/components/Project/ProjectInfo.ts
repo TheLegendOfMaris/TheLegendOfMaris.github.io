@@ -97,11 +97,13 @@ export const projects: Project[] = [
     title: 'Bachelorarbeit',
     year: '2025',
     description:
-      '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
+      '"Entwicklung eines Serious Games zur Vermittlung von Grundlagen wissenschafftlicher Quellenarbeit"\n\nIm Rahmen meiner Bachelorarbeit entwickelte ich ein prototypisches Spiel, das Studierenden spielerisch die wichtigsten Aspekte der wissenschaftlichen Quellenarbeit vermittelt. ',
     image: '/Wissensquell.png',
     hasWebsite: true,
     website: 'http://wissensquell.imn.htwk-leipzig.de/',
     hasSummary: true,
+    summaryContent:
+      'Wissenschaftliche Quellenarbeit bildet eine zentrale Kompetenz der Hochschulbildung und trägt zur Förderung kritischen Denkens bei. \n\nIn dieser Arbeit wurde ein Serious Game zur Vermittlung von Grundlagen der wissenschaftlichen Quellenarbeit entwickelt und hinsichtlich seiner didaktischen Eignung und seines Einflusses auf die Lernmotivation evaluiert. Das entwickelte didaktische Konzept integriert den Konnektivismus nach Siemens als lerntheoretisches Rahmenwerk, die Self-Determination Theory von Deci und Ryan zur motivationspsychologischen Fundierung sowie die überarbeitete Bloomsche Taxonomie zur systematischen Strukturierung der Lernziele auf verschiedenen kognitiven Ebenen. \n\nDas resultierende webbasierte Point-and-Click-Spiel umfasst drei Minispiele: ein dialogbasiertes Spiel zur Vermittlung der Anforderungen an wissenschaftliche Quellen, eine Kategorisierung mittels Drag-and-Drop von Quellenressourcen und ein Spiel für die Qualitätsbewertung wissenschaftlicher Quellen. Die empirische Evaluation erfolgte durch qualitative Leitfadeninterviews mit fünf Teilnehmenden sowie durch die Analyse quantitativer Verhaltensdaten aus dem Spiel. \n\nDie Ergebnisse zeigen einen positiven Einfluss des Serious Games auf die intrinsische Lernmotivation der Teilnehmenden. Der systematische Vergleich zwischen didaktischem Konzept und entwickeltem Serious Game bestätigt die erfolgreiche Umsetzung der theoretischen Grundlagen und die didaktische Eignung des Spiels. \n\nDie Arbeit leistet einen Beitrag zur Entwicklung innovativer digitaler Lernmedien und demonstriert das Potenzial von Serious Games für die motivierende Vermittlung wissenschaftlicher Kompetenzen in der Hochschullehre.',
     screenPosition: {
       top: '5.5%',
       left: '10.3%',
