@@ -7,8 +7,9 @@ export interface Project {
   website?: string;
   hasSummary: boolean;
   summaryContent?: string;
-  summaryPdf?: string;
+  summaryPdf?: string | string[];
   isGallery?: boolean;
+  buttontext?: string;
   images?: string[];
   //Positioning and Sizing
   screenPosition?: {
@@ -54,21 +55,20 @@ export const projects: Project[] = [
       height: '83%',
     },
   },
-
   {
     title: 'Ve aRe Sampler',
     year: '2025',
     description:
-      'Ein Unity-VR-Projekt, indem ein Sampler in einer virtuellen Umgebung erstellen und bedienen kann. Die 3D-Modellierung wurde mit Blender modelliert und anschließend wurde mit Hilfe von der Logic programmiert und verknüpft.',
+      'Ein Unity-VR-Projekt, in dem ein virtueller Sampler entworfen und bedienbar gemacht wurde. Die 3D-Modelle entstanden in Blender und wurden anschließend in Unity mit interaktiver C#-Logik verbunden. Das Projekt wurde im Team realisiert, meine Hauptaufgaben lagen in der Organisation, im Design der virtuellen Umgebung sowie in Teilen der Logikentwicklung.',
     image: '/VRSampler.png',
     hasWebsite: false,
-    hasSummary: true,
+    hasSummary: false,
   },
   {
     title: 'Tempel in Blender',
     year: '2025',
     description:
-      'Im Rahmen des Moduls Computeranimation musste ich Gebäude komplett selbst 3D-modellieren und mit Texturen und Materialien versehen werden.',
+      'Im Rahmen des Moduls Computeranimation modellierte ich einen Tempel komplett in 3D, inklusive Texturen, Materialien und Rendering. Ziel war es, realistische Architektur umzusetzen und Erfahrungen mit Animationen und Rendering in Blender zu sammeln.',
     image: '/RenderDämmerung.png',
     images: [
       '/RenderDämmerung.png',
@@ -85,10 +85,12 @@ export const projects: Project[] = [
     title: 'Praktikum',
     year: '2025',
     description:
-      '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
+      'Drei-Monatiges Praktikum bei der WBS IT-Service GmbH in Leipzig mit Fokus auf die Entwicklung eines PDF-Exports. Das Praktikum bot mir die Gelegenheit, praxisnah an realen Kundenprojekten zu arbeiten, meine im Studium erworbenen Kenntnisse in Webentwicklung und Projektarbeit anzuwenden und erste berufliche Erfahrungen zu sammeln. Besonders wertvoll waren Einblicke in Unternehmensprozesse, die Arbeit mit modernen Webtechnologien sowie die eigenständige Umsetzung eines Teilprojekts.',
     image: '/WBS.png',
     hasWebsite: false,
     hasSummary: true,
+    buttontext: 'Praktikumszeugnis',
+    summaryPdf: ['/Praktikumszeugnis1.png', '/Praktikumszeugnis2.png'],
     imageSize: 'small',
   },
   {

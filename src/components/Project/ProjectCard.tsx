@@ -36,7 +36,7 @@ export const CardLeft = ({ project }: { project: Project }) => {
                 className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm cursor-pointer"
                 onClick={() => setIsModalOpen(true)}
               >
-                Mehr Informationen
+                {project.buttontext ? project.buttontext : 'Mehr Informationen'}
               </button>
             )}
             {project.hasWebsite && (
@@ -94,7 +94,7 @@ export const CardLeft = ({ project }: { project: Project }) => {
         onClose={() => setIsModalOpen(false)}
         title={`${project.title}`}
         content={project.summaryContent}
-        pdfUrl={project.summaryPdf}
+        images={project.summaryPdf}
       />
     </>
   );
@@ -156,7 +156,7 @@ export const CardRight = ({ project }: { project: Project }) => {
                 className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm cursor-pointer"
                 onClick={() => setIsModalOpen(true)}
               >
-                Mehr Informationen
+                {project.buttontext ? project.buttontext : 'Mehr Informationen'}
               </button>
             )}
             {project.hasWebsite && (
@@ -176,7 +176,7 @@ export const CardRight = ({ project }: { project: Project }) => {
         onClose={() => setIsModalOpen(false)}
         title={`${project.title}`}
         content={project.summaryContent}
-        pdfUrl={project.summaryPdf}
+        images={project.summaryPdf}
       />
     </>
   );

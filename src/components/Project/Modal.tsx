@@ -5,10 +5,10 @@ interface ModalProps {
   onClose: () => void;
   title: string;
   content?: string;
-  pdfUrl?: string;
+  images?: string | string[];
 }
 
-const Modal = ({ isOpen, onClose, title, content, pdfUrl }: ModalProps) => {
+const Modal = ({ isOpen, onClose, title, content, images }: ModalProps) => {
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -65,29 +65,25 @@ const Modal = ({ isOpen, onClose, title, content, pdfUrl }: ModalProps) => {
 
         {/* Content */}
         <div className="overflow-auto max-h-[calc(98vh-80px)] p-4">
-          {pdfUrl ? (
-            <object
-              data={pdfUrl}
-              type="application/pdf"
-              className="w-full border-0"
-              style={{
-                height: 'calc(98vh - 100px)',
-                minHeight: '1500px',
-                zoom: '0.4',
-              }}
-            >
-              <p>
-                Ihr Browser unterstützt keine PDF-Anzeige.{' '}
-                <a
-                  href={pdfUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 underline"
-                >
-                  PDF herunterladen
-                </a>
-              </p>
-            </object>
+          {images ? (
+            <div className="space-y-4">
+              {Array.isArray(images) ? (
+                images.map((imageSrc: string, index: number) => (
+                  <img
+                    key={index}
+                    src={imageSrc}
+                    alt={`${title} - Bild ${index + 1}`}
+                    className="w-full h-auto rounded-lg"
+                  />
+                ))
+              ) : (
+                <img
+                  src={images}
+                  alt={title}
+                  className="w-full h-auto rounded-lg"
+                />
+              )}
+            </div>
           ) : (
             <div className="p-6 text-gray-300 whitespace-pre-wrap overflow-y-auto max-h-[calc(95vh-80px)]">
               {content}
