@@ -20,17 +20,20 @@ export const CardLeft = ({ project }: { project: Project }) => {
   return (
     <div className="grid md:grid-cols-2 gap-8 items-center">
       <div className="space-y-4">
-        <h3 className="text-2xl font-semibold">{project.title}</h3>
+        <div className="flex items-center gap-4">
+          <h3 className="text-2xl font-semibold">{project.title}</h3>
+          <p className="text-lg font-medium text-gray-400">{project.year}</p>
+        </div>
         <p className="text-gray-300">{project.description}</p>
         <div className="flex gap-3 pt-2">
           {project.hasSummary && (
-            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+            <button className="cursor-pointer bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
               Zusammenfassung
             </button>
           )}
           {project.hasWebsite && (
             <button
-              className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
+              className="cursor-pointer bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
               onClick={() => window.open(project.website)}
             >
               Website
@@ -122,17 +125,20 @@ export const CardRight = ({ project }: { project: Project }) => {
         )}
       </div>
       <div className="space-y-4 order-1 md:order-2">
-        <h3 className="text-2xl font-semibold">{project.title}</h3>
+        <div className="flex items-center gap-4">
+          <h3 className="text-2xl font-semibold">{project.title}</h3>
+          <p className="text-lg font-medium text-gray-400">{project.year}</p>
+        </div>
         <p className="text-gray-300">{project.description}</p>
         <div className="flex gap-3 pt-2">
           {project.hasSummary && (
-            <button className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
+            <button className="cursor-pointer bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm">
               Zusammenfassung
             </button>
           )}
           {project.hasWebsite && (
             <button
-              className="bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
+              className="cursor-pointer bg-[#13131f] hover:bg-[#232336] transition-colors px-4 py-2 rounded-md text-sm"
               onClick={() => window.open(project.website)}
             >
               Website

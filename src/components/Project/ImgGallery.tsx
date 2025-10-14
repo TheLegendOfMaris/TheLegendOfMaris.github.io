@@ -50,7 +50,7 @@ const ImgGallery = ({ images, title, className = '' }: ImageGalleryProps) => {
       {/* Previous Button */}
       <button
         onClick={previous}
-        className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md hover:bg-gray-200 transition-colors"
+        className="cursor-pointer absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md hover:bg-gray-200 transition-colors"
         aria-label="Vorheriges Bild"
       >
         <svg
@@ -71,7 +71,7 @@ const ImgGallery = ({ images, title, className = '' }: ImageGalleryProps) => {
       {/* Next Button */}
       <button
         onClick={forward}
-        className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md hover:bg-gray-200 transition-colors"
+        className="cursor-pointer absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md hover:bg-gray-200 transition-colors"
         aria-label="Nächstes Bild"
       >
         <svg

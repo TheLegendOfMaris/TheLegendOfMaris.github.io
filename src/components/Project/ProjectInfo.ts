@@ -1,5 +1,6 @@
 export interface Project {
   title: string;
+  year: string;
   description: string;
   image: string;
   hasWebsite: boolean;
@@ -19,22 +20,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Softwareprojekt',
-    description:
-      'Das Softwareprojekt war ein 2-semestrigen Pflichtmodul im Studium. In Gruppen haben wir eine Webanwendung zu entwickeln.',
-    image: '/Softwareprojekt.png',
-    hasWebsite: true,
-    website: 'https://dcnm-stellen.imn.htwk-leipzig.de/',
-    hasSummary: true,
-    screenPosition: {
-      top: '5.5%',
-      left: '10.5%',
-      width: '79%',
-      height: '83%',
-    },
-  },
-  {
     title: 'Digitales Bücherregal',
+    year: '2023',
     description:
       'Eine kleine Website, die meine persönlichen Lieblingsbücher in einer Übersicht darstellt.',
     image: '/Bookshelf.png',
@@ -49,7 +36,25 @@ export const projects: Project[] = [
     },
   },
   {
+    title: 'DCNM-Stellenbörse',
+    year: '2024-2025',
+    description:
+      'Die DCNM-Stellenbörse ist eine zentrale Plattform zur Veröffentlichung wissenschaftlicher Stellenangebote im mitteldeutschen Raum. Sie wurde in Kooperation mit dem Leipzig Science Network entwickelt, um die Sichtbarkeit und Zugänglichkeit wissenschaftlicher Karrieremöglichkeiten zu verbessern. Das Projekt entstand im Rahmen eines studentischen Softwareentwicklungsprojekts, bei dem wir in einem interdisziplinären Team nach dem Scrum-Framework arbeiteten. Mein Fokus lag auf der Entwicklung und Integration der Backend-Services und der Validierung der KI-Ergebnisse.',
+    image: '/Softwareprojekt.png',
+    hasWebsite: true,
+    website: 'https://dcnm-stellen.imn.htwk-leipzig.de/',
+    hasSummary: true,
+    screenPosition: {
+      top: '5.5%',
+      left: '10.5%',
+      width: '79%',
+      height: '83%',
+    },
+  },
+
+  {
     title: 'Ve aRe Sampler',
+    year: '2025',
     description:
       'Ein Unity-VR-Projekt, indem ein Sampler in einer virtuellen Umgebung erstellen und bedienen kann. Die 3D-Modellierung wurde mit Blender modelliert und anschließend wurde mit Hilfe von der Logic programmiert und verknüpft.',
     image: '/VRSampler.png',
@@ -58,6 +63,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Tempel in Blender',
+    year: '2025',
     description:
       'Im Rahmen des Moduls Computeranimation musste ich Gebäude komplett selbst 3D-modellieren und mit Texturen und Materialien versehen werden.',
     image: '/RenderDämmerung.png',
@@ -74,6 +80,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Praktikum',
+    year: '2025',
     description:
       '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
     image: '/WBS.png',
@@ -83,6 +90,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Bachelorarbeit',
+    year: '2025',
     description:
       '3-Monatiges Praktikum bei der IT-Service Firma WBS in Leipzig. Hauptsächlich war die Entwicklung eines personalisierten PDF-Exports meine Aufgabe.',
     image: '/Wissensquell.png',

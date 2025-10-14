@@ -113,7 +113,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-pink-200 text-[#1a1a24] font-medium rounded-md hover:bg-pink-300 transition-colors"
+            className="cursor-pointer w-full py-3 bg-pink-200 text-[#1a1a24] font-medium rounded-md hover:bg-pink-300 transition-colors"
           >
             Submit
           </button>

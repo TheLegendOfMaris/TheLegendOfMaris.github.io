@@ -21,7 +21,7 @@ const Hero = () => {
           Hi, ich bin Marie – kreative Softwareentwicklerin mit Fokus auf
           sauberen Code und Liebe zum Detail.
         </p>
-        <button className="bg-[#13131f] text-white hover:bg-[#232336] transition-colors px-9 py-4 rounded-md text-lg">
+        <button className="cursor-pointer bg-[#13131f] text-white hover:bg-[#232336] transition-colors px-9 py-4 rounded-md text-lg">
           Projekte ansehen
         </button>
       </div>
