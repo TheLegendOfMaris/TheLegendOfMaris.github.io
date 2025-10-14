@@ -120,7 +120,7 @@ const Contact = () => {
         </form>
 
         <div className="text-xs text-gray-400 mt-8 text-center">
-          Zuletzt aktualisiert: 26.04.2023
+          Zuletzt aktualisiert: 14.10.2025
         </div>
       </div>
     </section>

@@ -1,4 +1,10 @@
+import { useState } from 'react';
+import Modal from './Project/Modal';
+import { impressumContent, datenschutzContentHtml } from './LegalContent';
+
 const Footer = () => {
+  const [isImpressumOpen, setIsImpressumOpen] = useState(false);
+  const [isDatenschutzOpen, setIsDatenschutzOpen] = useState(false);
   return (
     <footer className="py-8 px-6 bg-[#F7F7F7]/[0.05] text-gray-400 text-sm">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -7,14 +13,20 @@ const Footer = () => {
         <div className="mt-4 md:mt-0">
           <ul className="flex space-x-6">
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <button
+                onClick={() => setIsImpressumOpen(true)}
+                className="hover:text-white transition-colors cursor-pointer"
+              >
                 Impressum
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <button
+                onClick={() => setIsDatenschutzOpen(true)}
+                className="hover:text-white transition-colors cursor-pointer"
+              >
                 Datenschutz
-              </a>
+              </button>
             </li>
             <li>
               <a
@@ -39,6 +51,21 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      {/* Modals */}
+      <Modal
+        isOpen={isImpressumOpen}
+        onClose={() => setIsImpressumOpen(false)}
+        title="Impressum"
+        content={impressumContent}
+      />
+
+      <Modal
+        isOpen={isDatenschutzOpen}
+        onClose={() => setIsDatenschutzOpen(false)}
+        title="Datenschutzerklärung"
+        htmlContent={datenschutzContentHtml}
+      />
     </footer>
   );
 };
