@@ -30,7 +30,7 @@ const Modal = ({ isOpen, onClose, title, content, images }: ModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+    <div className="fixed inset-0 z-[9999] flex items-start justify-center pt-8">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]"
@@ -38,7 +38,7 @@ const Modal = ({ isOpen, onClose, title, content, images }: ModalProps) => {
       />
 
       {/* Modal Content */}
-      <div className="relative bg-[#1a1a24] rounded-lg shadow-xl max-w-[92vw] max-h-[98vh] w-full mx-4 overflow-hidden z-[9999]">
+      <div className="relative bg-[#1a1a24] rounded-lg shadow-xl max-w-[92vw] max-h-[90vh] w-full mx-4 overflow-hidden z-[9999]">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-600">
           <h2 className="text-xl font-semibold text-white">{title}</h2>
@@ -64,7 +64,7 @@ const Modal = ({ isOpen, onClose, title, content, images }: ModalProps) => {
         </div>
 
         {/* Content */}
-        <div className="overflow-auto max-h-[calc(98vh-80px)] p-4">
+        <div className="overflow-auto max-h-[calc(90vh-80px)] p-4">
           {images ? (
             <div className="space-y-4">
               {Array.isArray(images) ? (
@@ -85,7 +85,7 @@ const Modal = ({ isOpen, onClose, title, content, images }: ModalProps) => {
               )}
             </div>
           ) : (
-            <div className="p-6 text-gray-300 whitespace-pre-wrap overflow-y-auto max-h-[calc(95vh-80px)]">
+            <div className="p-6 text-gray-300 whitespace-pre-wrap overflow-y-auto max-h-[calc(90vh-80px)]">
               {content}
             </div>
           )}
