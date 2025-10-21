@@ -8,16 +8,16 @@ const Hero = () => {
         <img
           src={Clouds}
           alt="Cloud Background"
-          className="w-full h-full object-contain [image-rendering:pixelated]"
+          className="w-full h-full object-cover [image-rendering:pixelated]"
         />
       </div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-6xl md:text-8xl font-bold text-[#1a1a24] mb-6">
+        <h1 className="text-7xl lg:text-8xl font-bold text-[#1a1a24] mb-6 text-shadow-lg">
           Portfolio
         </h1>
-        <p className="text-lg md:text-xl text-[#1a1a24] max-w-2xl mb-8">
+        <p className="text-2xl  text-[#1a1a24] max-w-2xl mb-8">
           Hi, ich bin Marie – kreative Softwareentwicklerin mit Fokus auf
           sauberen Code und Liebe zum Detail.
         </p>
