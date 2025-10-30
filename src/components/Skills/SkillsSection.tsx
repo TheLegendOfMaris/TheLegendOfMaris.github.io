@@ -9,7 +9,6 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-30">
           <TechnologyCard
             title="Programmiersprachen"
-            technologies="C/C++, Java, JavaScript, TypeScript"
             icons={[
               { src: '/Icons/C++Icon.png', name: 'C++' },
               { src: '/Icons/JavaIcon.png', name: 'Java' },
@@ -25,7 +24,6 @@ const Skills = () => {
           />
           <TechnologyCard
             title="Web- & Softwareentwicklung"
-            technologies="React, Tailwind CSS, Bootstrap, Node.js, MySQL, OpenAI API, Swagger, Jest"
             icons={[
               { src: '/Icons/ReactIcon.png', name: 'React' },
               { src: '/Icons/TailwindIcon.png', name: 'Tailwind' },
@@ -39,7 +37,6 @@ const Skills = () => {
           />
           <TechnologyCard
             title="Tools & Sonstiges"
-            technologies="GitHub, Azure DevOps, Docker, Figma, Unity, Blender"
             icons={[
               { src: '/Icons/GitHubIcon.png', name: 'GitHub' },
               {

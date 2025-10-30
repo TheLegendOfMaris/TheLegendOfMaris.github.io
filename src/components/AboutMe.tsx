@@ -32,8 +32,35 @@ const About = () => {
           </div>
 
           <div className="md:w-1/3 flex justify-center">
-            <div className="w-64 h-64 md:w-80 md:h-80 bg-[#FCCCCC] rounded-full overflow-hidden">
-              {/* Profile image would go here */}
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-[#FCCCCC] rounded-full overflow-hidden shadow-lg">
+                <img
+                  src="/BildVonMir.png"
+                  alt="Profilbild von Marie Schwabe"
+                  className="w-full h-full object-cover object-[20%_40%]"
+                />
+              </div>
+
+              {/* Ministerne oben rechts */}
+              {/* <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 z-10">
+                // Erster Stern 
+                <div className="absolute z-20">
+                  <img
+                    src="/MiniStern.png"
+                    alt="Mini Stern"
+                    className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                  />
+                </div>
+
+                // Zweiter Stern - leicht versetzt und größer
+                <div className="absolute top-3 left-2 z-20">
+                  <img
+                    src="/MiniStern.png"
+                    alt="Mini Stern"
+                    className="w-8 h-8 md:w-10 md:h-10 object-contain"
+                  />
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

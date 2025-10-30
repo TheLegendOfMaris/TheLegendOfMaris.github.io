@@ -1,10 +1,10 @@
 export default function TechnologyCard({
   title,
-  technologies,
+  // technologies,
   icons,
 }: {
   title: string;
-  technologies: string;
+  // technologies: string;
   icons: { src: string; name: string }[];
 }) {
   return (
@@ -33,7 +33,7 @@ export default function TechnologyCard({
         </div>
       </div>
       <h3 className="text-[#FFFFFF] font-semibold">{title}</h3>
-      <p className="text-[#828282]">{technologies}</p>
+      {/* <p className="text-[#828282]">{technologies}</p> */}
     </div>
   );
 }
