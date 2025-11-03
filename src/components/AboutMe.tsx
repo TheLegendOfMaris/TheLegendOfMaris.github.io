@@ -1,7 +1,10 @@
 const About = () => {
   return (
-    <div id="about" className="bg-[#F7F7F7]/[0.16] py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div
+      id="about"
+      className="bg-[#F7F7F7]/[0.16] py-16 px-6 overflow-x-hidden"
+    >
+      <div className="max-w-6xl mx-auto overflow-x-hidden">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
           <div className="md:w-2/3">
             <h2 className="text-4xl font-bold mb-8 relative">Über mich</h2>

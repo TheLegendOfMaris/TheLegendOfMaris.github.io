@@ -39,8 +39,8 @@ const ImgGallery = ({ images, title, className = '' }: ImageGalleryProps) => {
 
   return (
     <div
-      className={`relative mx-auto overflow-hidden rounded-md ${className}`}
-      style={{ width: '30rem' }}
+      className={`relative mx-auto overflow-hidden rounded-md max-w-full ${className}`}
+      style={{ width: 'min(30rem, 100vw - 2rem)', maxWidth: '100%' }}
     >
       {/* Counter */}
       <div className="absolute right-2 top-2 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
