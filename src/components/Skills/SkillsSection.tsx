@@ -6,7 +6,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-12">Skills</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-30">
+        <div className="grid grid-cols-1 min-[720px]:grid-cols-2 lg:grid-cols-3 gap-6 mb-30 justify-items-center min-[720px]:justify-items-stretch">
           <TechnologyCard
             title="Programmiersprachen"
             icons={[

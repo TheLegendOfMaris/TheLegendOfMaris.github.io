@@ -16,20 +16,20 @@ const About = () => {
               </p>
 
               <p>
-                Derzeit studiere ich Medieninformatik im Master an der HTWK
+                Aktuell studiere ich Medieninformatik im Master an der HTWK
                 Leipzig und arbeite nebenbei an eigenen Softwareprojekten. In
-                den letzten Jahren habe ich an vielseitigen Projekten gearbeitet
-                – von modernen Webanwendungen mit React und TypeScript über
-                serverseitige Logik mit Node.js bis hin zu Datenbankdesign mit
-                MySQL. Besonders fasziniert mich dabei die Verbindung aus
-                technischem Denken, Kreativität und dem ständigen Lernen neuer
-                Technologien.
+                den letzten Jahren durfte ich vielfältige Erfahrungen sammeln,
+                von modernen Webanwendungen mit React und TypeScript über
+                serverseitige Entwicklung mit Node.js bis hin zum
+                Datenbankdesign mit MySQL. Besonders begeistert mich die
+                Verbindung von technischem Denken, Kreativität und der
+                Möglichkeit, ständig Neues zu lernen.
               </p>
 
               <p>
                 Abseits des Bildschirms lebe ich meine kreative Seite beim Malen
-                oder Häkeln aus, lese gerne und lasse mich auf Reisen von neuen
-                Orten inspirieren..
+                aus, lese gerne und lasse mich auf Reisen von neuen Orten
+                inspirieren.
               </p>
             </div>
           </div>
@@ -45,25 +45,27 @@ const About = () => {
               </div>
 
               {/* Ministerne oben rechts */}
-              {/* <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 z-10">
-                // Erster Stern 
-                <div className="absolute z-20">
+              <div className="absolute -top-1 -right-3 md:top-2 md:-right-4 z-10 w-12 h-12">
+                {/* Erster Stern */}
+                <div className="absolute z-20 p-1 rounded">
                   <img
                     src="/MiniStern.png"
                     alt="Mini Stern"
                     className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                    style={{ imageRendering: 'pixelated' }}
                   />
                 </div>
 
-                // Zweiter Stern - leicht versetzt und größer
-                <div className="absolute top-3 left-2 z-20">
+                {/* Zweiter Stern - leicht versetzt und größer */}
+                <div className="absolute top-4 left-3 z-20 p-1 rounded">
                   <img
                     src="/MiniStern.png"
                     alt="Mini Stern"
                     className="w-8 h-8 md:w-10 md:h-10 object-contain"
+                    style={{ imageRendering: 'pixelated' }}
                   />
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
