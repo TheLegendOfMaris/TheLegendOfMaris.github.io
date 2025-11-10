@@ -10,10 +10,7 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-8 relative">Über mich</h2>
 
             <div className="space-y-4 text-gray-200">
-              <p>
-                Ich bin Marie Schwabe, 21 Jahre alt, und leidenschaftliche
-                Softwareentwicklerin.
-              </p>
+              <p>Mein Name ist Marie Schwabe und ich bin 21 Jahre alt.</p>
 
               <p>
                 Aktuell studiere ich Medieninformatik im Master an der HTWK
@@ -28,8 +25,8 @@ const About = () => {
 
               <p>
                 Abseits des Bildschirms lebe ich meine kreative Seite beim Malen
-                aus, lese gerne und lasse mich auf Reisen von neuen Orten
-                inspirieren.
+                aus, liebe Handarbeiten, lese gerne und lasse mich auf Reisen
+                von neuen Orten inspirieren.
               </p>
             </div>
           </div>
