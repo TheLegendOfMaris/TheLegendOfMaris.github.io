@@ -18,8 +18,7 @@ const Contact = () => {
             Fragen haben, mehr über meine Arbeit erfahren möchten oder eine
             mögliche Zusammenarbeit in Betracht ziehen, können Sie mich gerne
             kontaktieren. Ich antworte in der Regel zeitnah und freue mich auf
-            Ihre Nachricht. Nutzen Sie einfach den folgenden Button, um mit mir
-            in Kontakt zu treten.
+            Ihre Nachricht.
           </p>
         </div>
 

@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maries Bookshelf</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="U5style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#start">Start</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lieblingsbücher">Lieblingsbücher</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#toRead">To-Read-Liste</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Peer-Review</a>
+              </li>
+            </ul>
+            <p>Marie Schwabe 22MIB-2</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Carousel -->
+    <div class="container-fluid vh-100" id="start">
+      <div id="carouselExampleCaptions" class="carousel slide h-100">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img
+              src="pictures/flowerbackground.jpg"
+              class="d-block w-100 h-100"
+              alt="Dark tulips background"
+            />
+            <!-- srcset="https://www.freepik.com/free-photo/gold-frame-with-tulip-border-black-background_28097205.htm#query=dark%20floral%20wallpaper&position=30&from_view=keyword&track=ais&uuid=d8d18913-d2cc-493a-a8c3-65dc2668409e" -->
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Maries Bookshelf</h1>
+              <p>
+                Alle meine Lieblingsbücher, aktuelle Lektüre und meine
+                To-Read-Liste.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="pictures/tulips.jpg"
+              class="d-block w-100 h-100"
+              alt="Tulips on a pink background"
+            />
+            <!-- srcset="https://www.freepik.com/free-vector/wedding-frame-with-tulip-border-brown-background_16327249.htm?query=dark%20floral%20wallpaper#from_view=detail_alsolike#position=4&query=dark%20floral%20wallpaper" -->
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: black"
+            >
+              <h1>
+                “I am writing because they told me to never start a sentence
+                with because. But I wasn't trying to make a sentence—I was
+                trying to break free. Because freedom, I am told, is nothing but
+                the distance between the hunter and its prey.”
+              </h1>
+              <p>― Ocean Vuong, On Earth We're Briefly Gorgeous</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <div class="container" id="lieblingsbücher">
+      <!-- Currently Reading -->
+      <div class="container border border-secondary">
+        <div class="row my-5">
+          <h2>Derzeit auf meinem Nachttisch:</h2>
+          <div class="currentlyreading my-5">
+            <img
+              src="pictures/ironflame.jpg"
+              alt="Iron Flame Cover"
+              class="d-block custom-height"
+            />
+            <!-- srcset="https://www.bigw.com.au/medias/sys_master/images/images/hb8/h2a/44867031269406.jpg" -->
+            <h3 class="fw-normal">IRON FLAME</h3>
+            <p>Die Fortsetzung zu "Fourth Wing"</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fav books -->
+      <h2 class="my-5">Lieblingsbücher</h2>
+      <!-- 1st Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7">
+          <h4 class="featurette-heading fw-normal lh-1">
+            FOURTH WING<span class="secondary"> - rebecca yarros</span>
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+          </p>
+          <p>
+            “A dragon without its rider is a tragedy. A rider without their
+            dragon is dead.”<br />
+            Violet wird befohlen sich den hunderten von Anwärtern anzuschließen,
+            die darum kämpfen, zu den Eliten von Navarre zu gehören: den
+            Drachenreitern. Doch mit jedem vergehenden Tag wird der Krieg
+            draußen tödlicher, die Schutzwälle des Königreichs versagen, und die
+            Todeszahl steigt weiter an. Außerdem beginnt Violet zu vermuten,
+            dass die Führung ein wichtiges Geheimnis verbirgt.
+            <br />Absolut fesselndes Buch, klare Empfehlung für alle
+            Fantasy-Fans!
+          </p>
+        </div>
+        <div class="col-md-2 offset-2">
+          <img
+            src="pictures/fourthwing.jpg"
+            alt="Fourth Wing Buchcover"
+            class="d-block w-100 h-100"
+            srcset="
+              https://m.media-amazon.com/images/I/A1yI0aFggmL._AC_UF894,1000_QL80_.jpg
+            "
+          />
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 2nd Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7 order-md-4 offset-2">
+          <h4 class="featurette-heading fw-normal lh-1">
+            ON EARTH WE'RE BRIEFLY GORGEOUS<span class="secondary">
+              - ocean vuong</span
+            >
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+              />
+            </svg>
+          </p>
+          <p>
+            "On Earth We're Briefly Gorgeous" ist ein Brief eines Sohnes an eine
+            Mutter, die nicht lesen kann. Der Brief dient als Einblick in Teile
+            seines Lebens und in die Geschichte seiner Familie, vor seiner
+            Geburt, in Vietnam. Es beschäftigt sich zugleich mit komplexen
+            Themen, wie Rasse, Klasse und Männlichkeit, aber beleuchtet auch
+            schwere emotionale Themen inmitten von Sucht und Trauma. <br />
+            Herzergreifendes Buch, aber durch Voungs teilweise poetischen
+            Ausdruck ist es schwer der Handlung bzw seinen Emotionen zu folgen
+            und es zu verstehen.
+          </p>
+        </div>
+
+        <div class="col-md-2 order-md-2 offset-1">
+          <img
+            src="pictures/onearth.jpg"
+            alt="On Earth We Are Briefly Gorgeous Cover"
+            class="d-block w-100 h-100"
+            srcset="https://m.media-amazon.com/images/I/515XtG2JTbL.jpg"
+          />
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 3rd Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7">
+          <h4 class="featurette-heading fw-normal lh-1">
+            THE CRUEL PRINCE<span class="secondary"> - holly black</span>
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+          </p>
+          <p>
+            Mit erst sieben Jahren musste Jude mitansehen, wie ihre Eltern vor
+            ihren Augen brutal ermordet wurden. Der Mörder nahm sie und ihre
+            Schwestern mit zum Hohen Gericht der Feen, um dort als eine von
+            ihnen aufzuwachsen. Doch in den letzten zehn Jahren hat sich Jude
+            als Sterbliche nie dazugehörig gefühlt. Als Verrat das Hohe Gericht
+            erreicht, muss Jude herausfinden, wozu sie fähig ist, um die Macht
+            zu erlangen, nach der sie sich so sehnt. <br />
+            Noch ein Fantasy-Klassiker, die Trilogie war durchgehend spannend
+            und hat Spaß gemacht zu lesen.
+          </p>
+        </div>
+        <div class="col-md-2 offset-2">
+          <img
+            src="pictures/cruelprince.jpg"
+            alt="The Cruel Prince Buchcover"
+            class="d-block w-100 h-100"
+            srcset="
+              https://m.media-amazon.com/images/I/A14Q7VUgMsL._AC_UF350,350_QL50_.jpg
+            "
+          />
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 4th Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7 order-md-4 offset-2">
+          <h4 class="featurette-heading fw-normal lh-1">
+            PROJECT HAIL MARY<span class="secondary"> - andy weir</span>
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+          </p>
+          <p>
+            Ryland Grace ist der einzige Überlebende einer verzweifelten,
+            letzten Chance Mission – und sollte er scheitern, wird die
+            Menschheit und die Erde selbst untergehen. Mit seinen
+            Crewmitgliedern tot und seine Erinnerungen verschwommen
+            zurückkehrend, erkennt Ryland, dass ihn eine unmögliche Aufgabe
+            erwartet. Auf diesem winzigen Raumschiff durch den Weltraum rasend,
+            liegt es an ihm, ein unmögliches wissenschaftliches Rätsel zu lösen
+            und eine bedrohliche Gefahr für unsere Spezies zu überwinden. <br />
+            Das Buch hat meine Liebe für Sci-Fi wieder erweckt und war so
+            humorvoll, aber auch spannend geschrieben. Loved it!
+          </p>
+        </div>
+
+        <div class="col-md-2 order-md-2 offset-1">
+          <img
+            src="pictures/project.jpg"
+            alt="Project Hail Mary Cover"
+            class="d-block w-100 h-100"
+          />
+          <!-- srcset="https://images-eu.ssl-images-amazon.com/images/I/91mYu67RfUL._AC_UL600_SR600,600_.jpg" -->
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 5th Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7">
+          <h4 class="featurette-heading fw-normal lh-1">
+            1984<span class="secondary"> - george orwell</span>
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+              />
+            </svg>
+          </p>
+          <p>
+            "Krieg ist Freiheit. Freiheit ist Sklaverei. Ignoranz ist Stärke"
+            <br />
+            Die Geschichte erzählt von einem Mannes, der eine verbotene
+            Liebesaffäre in einer von Kriegen beherrschten Welt und einer
+            Machthierarchie verfolgt, die nicht nur Informationen, sondern auch
+            individuelle Gedanken und Erinnerungen kontrolliert. "1984" ist eine
+            prophetische und beklemmende Erzählung, die die schlimmsten
+            vorstellbaren Verbrechen aufdeckt – die Zerstörung von Wahrheit,
+            Freiheit und Individualität. <br />
+            Erschreckendes, aber augenöffnendes Buch zugleich.
+          </p>
+        </div>
+        <div class="col-md-2 offset-2">
+          <img
+            src="pictures/1984.jpg"
+            alt="1984 Buchcover"
+            class="d-block w-100 h-100"
+            srcset="
+              https://www.penguin.de/content/edition/covervoila_hires/Orwell_G1984_211962.jpg
+            "
+          />
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 6th Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7 order-md-4 offset-2">
+          <h4 class="featurette-heading fw-normal lh-1">
+            A COURT OF SILVER FLAMES<span class="secondary">
+              - sarah j. maas</span
+            >
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+          </p>
+          <p>
+            Seit Nesta gegen ihren Willen zur High Fae wurde, kämpft sie darum,
+            einen Platz für sich in der seltsamen, gefährlichen Welt zu finden,
+            die sie bewohnt. Schlimmer noch, sie kann die Schrecken des Krieges
+            mit Hybern und all das, was sie dabei verloren hat, nicht hinter
+            sich lassen. Vor dem Hintergrund einer von Krieg verbrannten Welt,
+            die von Unsicherheit geplagt ist, kämpfen Nesta und Cassian gegen
+            Monster von innen und außen, während sie nach Akzeptanz und Heilung
+            in den Armen des anderen suchen. <br />Das letzte Buch und damit der
+            krönende Abschluss der 5-teiligen Fantasy-Reihe
+          </p>
+        </div>
+
+        <div class="col-md-2 order-md-2 offset-1">
+          <img
+            src="pictures/silverflames.jpg"
+            alt="A Court Of Silver Flames Cover"
+            class="d-block w-100 h-100"
+            srcset="
+              https://m.media-amazon.com/images/I/814ZCEQqyrL._AC_UF894,1000_QL80_.jpg
+            "
+          />
+        </div>
+      </div>
+      <hr class="hr mx-auto" style="width: 70%" />
+      <!-- 7th Book -->
+      <div class="row featurette my-5">
+        <div class="col-md-7">
+          <h4 class="featurette-heading fw-normal lh-1">
+            The Da Vinci Code<span class="secondary"> - dan brown</span>
+          </h4>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+              />
+            </svg>
+          </p>
+          <p>
+            In Paris untersucht der Harvard-Symbologe Robert Langdon einen
+            nächtlichen Mord am Louvre-Kurator. Gemeinsam mit der Kryptologin
+            Sophie Neveu entdeckt er in Leonardo da Vincis Werken Hinweise auf
+            ein explosives historisches Geheimnis. Der getötete Kurator gehörte
+            dem Priorat von Zion an, einer Geheimgesellschaft mit Mitgliedern
+            wie Isaac Newton und Victor Hugo. Langdon und Neveu müssen das
+            Rätsel lösen und einem mysteriösen Verfolger entkommen, um die alte
+            Wahrheit zu bewahren. <br />
+            Es war faszinierend etwas über den Symbolismus hinter Da Vinics
+            Gemälden zu erfahren sowie die Gemeinsamkeiten zwischen modernem
+            Christentum und alten heidnischen Religionen.
+          </p>
+        </div>
+        <div class="col-md-2 offset-2">
+          <img
+            src="pictures/davinci.jpg"
+            alt="The Da Vinci Code Buchcover"
+            class="d-block w-100 h-100"
+            srcset="
+              https://m.media-amazon.com/images/I/61-NtNgM1ZL._AC_UF894,1000_QL80_.jpg
+            "
+          />
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!-- To-Read-List -->
+    <div class="container my-5" id="toRead">
+      <h2>To-Read-Liste:</h2>
+      <div class="row my-3">
+        <a
+          href="https://images.thalia.media/00/-/ef3c1417bcfd4786bf7cacc89d7d3abf/little-women-gebundene-ausgabe-louisa-may-alcott-englisch.jpeg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/littlewomen.jpg" class="d-block w-100 h-100" />
+        </a>
+        <a
+          href="https://m.media-amazon.com/images/I/71AHFDEpkdL._AC_UF894,1000_QL80_.jpg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/mountain.jpg" class="d-block w-100 h-100" />
+        </a>
+        <a
+          href="https://m.media-amazon.com/images/I/51eptsIBfCL._AC_UF894,1000_QL80_.jpg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/artemis.jpg" class="d-block w-100 h-100" />
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="https://m.media-amazon.com/images/I/71t9Gb4k2sL._AC_UF894,1000_QL80_.jpg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/atlas.jpg" class="d-block w-100 h-100" />
+        </a>
+        <a
+          href="https://m.media-amazon.com/images/I/710rIVUnZ3L._AC_UF894,1000_QL80_.jpg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/ballad.jpg" class="d-block w-100 h-100" />
+        </a>
+        <a
+          href="https://bilder.buecher.de/produkte/68/68452/68452960n.jpg"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+          class="col-sm-4 mb-3"
+        >
+          <img src="pictures/medienrecht.jpg" class="d-block w-100 h-100" />
+        </a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  </body>
+  <div class="foot" id="review">
+    <footer class="container">
+      <h5>Verwendete Techniken</h5>
+      <p></p>
+      <ul>
+        <li>Inspiration zur Gestaltung von Carousel-Example von Bootstrap</li>
+        <li>Arbeit mit Containern und Dividern</li>
+        <li>
+          Mithilfe von Lightbox eine Fotogallerie erstellt mit den Büchercovern
+        </li>
+        <li>
+          SVG benutzt, um Sterne darzustellen (von Bootstrap unter Icons zu
+          finden)
+        </li>
+        <li>Modals benutz für den Peerreview</li>
+      </ul>
+      <br />
+      <h5>Prozess</h5>
+      <p>
+        Um mir einen Überblick zur Gestaltung der Website mithilfe von Bootstrap
+        zu schaffen, habe ich mich mit den Grundlagen und Komponenten von
+        Bootstrap v5 beschäftigt. Da wurde schnell klar, dass ich das Carousel
+        als Startscreen verwenden will. Meine Lieblingsbücher sollen listenartig
+        dargestellt werden, um zwar Inhalt bereitstellen zu können, aber auch um
+        es übersichtlich zu gestalten. Für die To-Read-Liste hatte sich die
+        Gallerie von Lightbox spontan sehr gut angeboten.
+      </p>
+      <br />
+      <h5>Noch ne tolle Website</h5>
+      <p>
+        Eine andere gut umgesetzte Website ist von Arthur Praters. Sowohl das
+        Startbild, als auch das Ranking sind anschaulich und interessant
+        gestaltet. Die Navbar und die Zahlen an der Seite bieten eine leichte
+        und intuitive Navigation. Der ganze Raum des Screens wird genutzt und es
+        ist eine gute Balance zwischen Content und Design. Sehr schöne Umsetzung
+        und professionell aussehende Website.
+      </p>
+      <p>
+        <a href="https://www.imn.htwk-leipzig.de/~apraters/U5/"
+          >Hier der Link zum selber Anschauen</a
+        >
+      </p>
+      <button
+        type="button"
+        class="btn btn-secondary float-end"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Peer-Review
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Peer-Review
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Verbesserungsvorschläge</th>
+                    <th scope="col">Gelungenes</th>
+                    <th scope="col">Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Arthur Praters</td>
+                    <td>
+                      <li>könnte mehr responsive sein</li>
+                      <li>sonst supi</li>
+                    </td>
+                    <td>
+                      <li>cooles Design</li>
+                      <li>leichte Navigation</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~apraters/U5/"
+                        >Top 12 Videospiele</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Sophie Wieczorek</td>
+                    <td>
+                      <li>
+                        mehr Differenzierung zwischen Abschnitten (vielleicht
+                        background color)
+                      </li>
+                      <li>mehr farbliche Varianz</li>
+                    </td>
+                    <td>
+                      <li>schöne Bildelemente</li>
+                      <li>genaue Navigation</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~swieczor/U5/"
+                        >Serienempfehlungen</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Daniela Pech</td>
+                    <td>
+                      <li>keine navbar bei kleinen Bildschirmen</li>
+                      <li>sonst supi</li>
+                    </td>
+                    <td>
+                      <li>gutes Infomanagement</li>
+                      <li>interessante Wahl an Elementen</li>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.imn.htwk-leipzig.de/~dpech/MMWP5/index.html"
+                        >Vom Schaf zur Wolle</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Duc Anh Nguyen</td>
+                    <td>
+                      <li>mehr Elemente hinzufügen</li>
+                      <li>Schrift nicht gut lesbar auf Bild</li>
+                    </td>
+                    <td>
+                      <li>süße Hunde</li>
+                      <li>Sortierung nach Größe</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~dnguyen9/"
+                        >Doggos</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Louis Westerheide</td>
+                    <td>
+                      <li>navbar besser abheben</li>
+                      <li>zu langer Text</li>
+                    </td>
+                    <td>
+                      <li>Cards bieten sich gut für Albums an</li>
+                      <li>gut responsive</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~lwesterh/"
+                        >Hip Hops Finest</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Theo Richter</td>
+                    <td>
+                      <li>Bildergröße an andere anpassen</li>
+                      <li>Carouselschrift verschwindet bei kleinem screen</li>
+                    </td>
+                    <td>
+                      <li>schöne Startseite</li>
+                      <li>coole Bildelemnte</li>
+                    </td>
+                    <td>
+                      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        >Skateboarding</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Jasmin Endter</td>
+                    <td>
+                      <li>Text besser hervorheben</li>
+                      <li>viel Whitespace bei Desktop-screen</li>
+                    </td>
+                    <td>
+                      <li>süße Animationen</li>
+                      <li>cutes Design</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~jendter/PVL5/"
+                        >Enten</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Dominique Fischer</td>
+                    <td>
+                      <li>könnte besser responsive sein</li>
+                      <li>Prozess</li>
+                    </td>
+                    <td>
+                      <li>cooles und modernes Design</li>
+                      <li>gutes Infomanagement</li>
+                    </td>
+                    <td>
+                      <a href="https://www.imn.htwk-leipzig.de/~dfischer/"
+                        >Linoldruck</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Fabio Knöß</td>
+                    <td>
+                      <li>viel whitespace</li>
+                      <li>nicht so gut responsive</li>
+                    </td>
+                    <td>
+                      <li>schöne Farbwahl</li>
+                      <li>wechselnde Bilder</li>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.imn.htwk-leipzig.de/~fknoess/Leipzig/leipzig.html"
+                        >Aktivitäten Leipzig</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Julia-Robin Schuster</td>
+                    <td>
+                      <li>viel whitespace</li>
+                      <li>Links vielleicht besser ans Ende</li>
+                    </td>
+                    <td>
+                      <li>cooler Snap-Effekt</li>
+                      <li>süße Tiere</li>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.imn.htwk-leipzig.de/~jschust1/uebung5.html"
+                        >Lieblingstiere</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Olutamilore Oni-Orisan</td>
+                    <td>
+                      <li>nicht responsive</li>
+                      <li>bessere Anordnung vom Inhalt</li>
+                    </td>
+                    <td>
+                      <li>Empfehlung on Point</li>
+                      <li>schöne Farbwahl</li>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.imn.htwk-leipzig.de/~oonioris/Onepager"
+                        >Favourite Shows</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>Ulrike Hofmann</td>
+                    <td>
+                      <li>Text besser gestalten</li>
+                      <li>effekt nicht responsive</li>
+                    </td>
+                    <td>
+                      <li>cooler Anfangseffekt</li>
+                      <li>gute Navbar</li>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.imn.htwk-leipzig.de/~uhofmann/index_html.html"
+                        >Werwolf - Das Spiel</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</html>

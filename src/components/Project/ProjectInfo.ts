@@ -29,7 +29,7 @@ export const projects: Project[] = [
       'Im Rahmen eines Hochschulmoduls entwickelte ich eine kleine Website, die meine persönlichen Lieblingsbücher in einer übersichtlichen Galerie darstellt. Das Projekt diente als Übung zur Webentwicklung und bot mir die Gelegenheit, erste praktische Erfahrungen mit Bootstrap zu sammeln und den Umgang mit responsivem Design zu vertiefen.',
     image: '/Bookshelf.png',
     hasWebsite: true,
-    website: 'http://webdev.imn.htwk-leipzig.de/~mschwabe/',
+    website: '/bookshelf-demo/index.html',
     hasSummary: false,
     screenPosition: {
       top: '5.4%',

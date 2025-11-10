@@ -11,7 +11,7 @@ const About = () => {
 
             <div className="space-y-4 text-gray-200">
               <p>
-                Ich bin Marie, 21 Jahre alt, und leidenschaftliche
+                Ich bin Marie Schwabe, 21 Jahre alt, und leidenschaftliche
                 Softwareentwicklerin.
               </p>
 

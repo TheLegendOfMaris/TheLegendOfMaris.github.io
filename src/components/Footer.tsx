@@ -11,7 +11,7 @@ const Footer = () => {
         <div>© {new Date().getFullYear()} Marie Schwabe</div>
 
         <div className="text-xs text-gray-400 text-center">
-          Zuletzt aktualisiert: 14.10.2025
+          Zuletzt aktualisiert: 10.11.2025
         </div>
 
         <div className="mt-4 md:mt-0">
