@@ -111,4 +111,26 @@ export const projects: Project[] = [
       height: '83.5%',
     },
   },
+  {
+    title: 'Werkstudentin - Deskcenter AG',
+    year: '2026',
+    description:
+      'Tätigkeit als Softwareentwicklerin bei der Deskcenter AG mit mit Fokus auf die Entwicklung und Pflege von Softwarelösungen. Dabei war ich unter anderem an der Anforderungsanalyse, der Erstellung technischer Spezifikationen und der eigenständigen Umsetzung von Entwicklungsaufgaben beteiligt. Ein Schwerpunkt lag auf der Konzeption und Implementierung von Auswertungen zu installierten Produkten mit Vue.js und SQL, einschließlich der Aufbereitung, Abfrage und Visualisierung umfangreicher Datenmengen.',
+    image: '/Deskcenter.jpg',
+    hasWebsite: false,
+    hasSummary: true,
+    buttontext: 'Praktikumszeugnis',
+    summaryPdf: ['/Arbeitszeugnis1.png', '/Arbeitszeugnis2.png'],
+    imageSize: 'small',
+  },
+  {
+    title: 'Wissenschaftliche Hilfskraft',
+    year: '2026',
+    description:
+      'Viermonatige Tätigkeit als Wissenschaftliche Hilfskraft an der HTWK Leipzig und Tutor für das Bachelormodul „Anwendungsorientierte Programmierung“. Zu meinen Aufgaben gehörten die Betreuung und Unterstützung der Studierenden bei der Bearbeitung von Programmieraufgaben in Java, sowie die Unterstützung bei der Durchführung des Moduls.',
+    image: '/HTWK.jpg',
+    hasWebsite: false,
+    hasSummary: false,
+    imageSize: 'small',
+  },
 ];

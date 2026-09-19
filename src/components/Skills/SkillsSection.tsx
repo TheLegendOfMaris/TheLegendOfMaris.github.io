@@ -13,10 +13,6 @@ const Skills = () => {
               { src: '/Icons/C++Icon.png', name: 'C++' },
               { src: '/Icons/JavaIcon.png', name: 'Java' },
               {
-                src: '/Icons/JavaScriptIcon.png',
-                name: 'JavaScript',
-              },
-              {
                 src: '/Icons/TypeScriptIcon.png',
                 name: 'TypeScript',
               },
